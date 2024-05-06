@@ -1,0 +1,63 @@
+{
+  "taskDefinitionArn": "arn:aws:ecs:eu-central-1:767397699746:task-definition/structize-workflow:8",
+  "containerDefinitions": [
+    {
+      "name": "structize-workflow",
+      "image": "767397699746.dkr.ecr.eu-central-1.amazonaws.com/structize-workflow:5b67ce53e088e206ab27cc6a1c97d48661bb87cc",
+      "cpu": 0,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 80,
+          "protocol": "tcp"
+        },
+        {
+          "containerPort": 4242,
+          "hostPort": 4242,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "environment": [],
+      "mountPoints": [],
+      "volumesFrom": [],
+      "systemControls": [],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "structize-workflow-frontend",
+          "awslogs-region": "eu-central-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ],
+  "family": "structize-workflow",
+  "executionRoleArn": "arn:aws:iam::767397699746:role/ecsTaskExecutionRole",
+  "networkMode": "awsvpc",
+  "revision": 8,
+  "volumes": [],
+  "status": "ACTIVE",
+  "requiresAttributes": [
+    {
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "name": "ecs.capability.execution-role-ecr-pull"
+    },
+    {
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+    },
+    {
+      "name": "ecs.capability.task-eni"
+    }
+  ],
+  "placementConstraints": [],
+  "compatibilities": ["EC2", "FARGATE"],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024",
+  "registeredAt": "2024-05-06T23:26:56.928Z",
+  "registeredBy": "arn:aws:iam::767397699746:user/Talal",
+  "tags": []
+}
