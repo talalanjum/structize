@@ -1,6 +1,7 @@
 # Next.js frontend app
 
 ## Next.js app
+
 To start the frontend app,
 
 Firstly, make sure to create an /app/.env.local file, and define a variable **PUBLIC_NEXT_SERVER_URL=http://hostname:port**
@@ -29,7 +30,7 @@ This app consists of two main components:
 
 ### **Home Component**
 
-This is the wrapper component for the app. Contains information regarding the action by fetching the action data from the server. Also wraps the ``<Action>`` component
+This is the wrapper component for the app. Contains information regarding the action by fetching the action data from the server. Also wraps the `<Action>` component
 
 ### **Action Component**
 

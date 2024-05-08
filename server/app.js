@@ -131,10 +131,6 @@ app.post("/trigger-workflow", async (req, res) => {
   }
 });
 
-app.get("/hello", async (req, res) => {
-  res.send("hi");
-});
-
 server.listen(httpPort, () =>
   console.log(`App listening on port ${httpPort}!`)
 );

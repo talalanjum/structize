@@ -1,7 +1,8 @@
 # Node.js Server
 
-To run this server
+Hostname and port for the Node.js app, for purposes of triggering workflow: http://35.159.76.144:4242/
 
+To run this server
 
 Create a MongoDB Atlas account, and copy the secret URI. Add the URI to /server/.env.local with the name **MONGO_URI**.
 
@@ -25,7 +26,7 @@ docker run <nodejs-image-name>
 
 ## Description
 
-The server helps configure and run a workflow process end to end. 
+The server helps configure and run a workflow process end to end.
 
 ### Endpoints:
 
@@ -51,7 +52,8 @@ body = {
 }
 
 
-``` 
+```
+
 Updates these parameters in the workflow.
 
 ```
@@ -83,9 +85,3 @@ return {
   }
 }
 ```
-
-
-
-
-
-
